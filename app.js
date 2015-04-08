@@ -14,5 +14,5 @@ $(function() {
         });
     }
 
-    xy($('#container'), '.item', 50, 50);
+    xy($('#container'), '.item');
 });
