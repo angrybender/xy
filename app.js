@@ -10,7 +10,7 @@ $(function() {
         $('#container div:last').css({
             width: widths[Math.round(Math.random()*2)],
             height: height[Math.round(Math.random()*2)],
-            background: 'url(http://lorempixel.com/400/400?' + Math.random() + ') center'
+            background: 'url(http://lorempixel.com/500/500?' + Math.random() + ') center'
         });
     }
 
