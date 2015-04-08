@@ -1,0 +1,18 @@
+
+<ul ng-if="total > perPage" class="pagination">
+    <li ng-if="current > 1">
+        <a href="{{baseUrl}}/{{current-1}}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+
+    <li ng-repeat="item in range(total/perPage) track by $index" ng-class="current == $index+1 ? 'active' : ''">
+        <a href="{{baseUrl}}/{{$index+1}}">{{$index+1}}</a>
+    </li>
+
+    <li ng-if="max(total, perPage) > current">
+        <a href="{{baseUrl}}/{{1*current+1}}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+</ul>
