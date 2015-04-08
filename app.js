@@ -2,7 +2,7 @@
 $(function() {
 
     $('#container').width(1000).height(1000);
-    var widths = [100, 150, 500];
+    var widths = [100, 200, 500];
     var height = [50, 100, 200];
 
     for (var i = 0; i < 20; i++) {
