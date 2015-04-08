@@ -8,8 +8,8 @@ $(function() {
     for (var i = 0; i < 20; i++) {
         $('#container').append('<div class="item"></div>');
         $('#container div:last').css({
-            width: widths[Math.round(Math.random()*3)],
-            height: height[Math.round(Math.random()*3)],
+            width: widths[Math.round(Math.random()*2)],
+            height: height[Math.round(Math.random()*2)],
             background: 'url(http://lorempixel.com/400/400?' + Math.random() + ') center'
         });
     }
